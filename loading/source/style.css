@@ -1,0 +1,126 @@
+:root{
+    --bg:#4087bd;
+}
+
+body {
+    background-color: var(--bg);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.text p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loading1 {
+    display: inline;
+    align-items: center;
+    padding: 140px;
+}
+
+.loading1 span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    margin: 8px;
+}
+
+.loading1 span {
+    animation: bounce .6s cubic-bezier(0.6,0.1,1,0.4);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.loading1 span:nth-child(1) {
+    animation-delay: .1s;
+}
+
+.loading1 span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.loading1 span:nth-child(3) {
+    animation-delay: .3s;
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(50px);
+    }
+}
+
+.loading2 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    margin-left: 120px;
+}
+
+.loading2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(26deg * var(--i)));
+}
+
+.loading2 span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+
+}
+
+.loading2 span:nth-child(1)::before {
+    background: var(--bg);
+}
+
+.loading2 span:nth-child(2)::before {
+    background: var(--bg);
+}
+
+.loading2 span:nth-child(3)::before {
+    background: var(--bg);
+}
+
+.loading2 span:nth-child(4)::before {
+    background: var(--bg);
+}
+
+.loading2 span:nth-child(5)::before {
+    background: var(--bg);
+}
+
+.loading2 span:nth-child(6)::before {
+    background: var(--bg);
+}
+
+.loading2 span:nth-child(7)::before {
+    background: var(--bg);
+}
+
+.loading2 span:nth-child(8)::before {
+    background: var(--bg);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

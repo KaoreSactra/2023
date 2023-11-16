@@ -1,0 +1,64 @@
+body {
+  background-color: #F5F5F5;
+}
+
+.logo {
+  margin-left: 68px;
+  margin-top: 24px;
+}
+
+.titulo {
+  color: #920051;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+input {
+  width: 600px;
+  padding: 10px;
+  font-size: 16px;
+  color: #FFF;
+  border: 2px solid #404545;
+  border-radius: 0px;
+  background-color: #404545;
+  outline-color: #D9006F;
+  text-align: left;
+  display: block;
+  margin-left: 100px;
+}
+
+.responseAZ {
+  color: #000000;
+  background-color:white;
+  width: auto;
+  padding: 10px;
+  initial-height: 300px;
+  text-align: justify;
+  box-shadow: 0px 0px 8px rgb(173, 173, 173);
+  display: block;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-right: 100px;
+  font-family: "Monaco", Monospace;
+  white-space: pre-line;
+  font-size: 20px;
+}
+
+.responseAZ:before {
+  content: 'Resposta:';
+  display: inline-block;
+  width: 30px;
+  font-weight: bold;
+}
+
+.credtis {
+
+  font-family: "Monaco", Monospace;
+  font-size: 10px;
+  text-align: center;
+  color: rgb(194, 194, 194);
+
+}

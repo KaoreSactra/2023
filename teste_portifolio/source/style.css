@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+body {
+    background-color: #141414;
+    display: flex;
+    position: relative;
+}
+
+body.home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #141414;
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 5em;
+    background-color: #141414;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+}
+
+button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.5em;
+    width: 8.20em;
+    height: 2.6em;
+    background-color: #141414;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em;
+}
+
+button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+
+button span:not(hover) {
+    transition: all 1s;
+}
+
+button span a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+.photo_profile {
+    padding: 20px;
+}
+
+.photo_profile img {
+    position: relative;
+    width: 200px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+
+.main {
+    position: absolute;
+    padding: 0.8em;
+}
+
+.back a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Fredericka the Great', cursive;;
+}
+
+.title p {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Fredericka the Great', cursive;;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatAZ</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="logo">
+        <h1>
+            <img src="{{ url_for('static', filename='images/az-logo.svg') }}">
+        </h1>
+
+    </div>
+
+    <div class="titulo">
+        
+        <h2>Chat AZ:</h2>
+
+    </div>
+    
+    <div>
+        <form action="/chat" method="post">
+            
+            <input type="text" name="valor" placeholder="Digite..." autocomplete="off">
+    
+        </form>
+    
+    </div>
+
+    <p class="responseAZ">{{resposta}}</p>
+
+    <div class="credtis"><p>Essa IA é feita com base em chatGPT, os direitos da model são exclusivamente da OpenIA</p></div>
+
+</body>
+
+</html>
